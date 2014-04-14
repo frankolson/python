@@ -14,9 +14,18 @@ def lettersInFile( file_name ):
     
     # Initialize variables and arrays
     answer = ""
+    letterArray = []
+    tempList = []
     lineArray = fout.readlines()
+
+    # Populate letterArray
+    for e in lineArray:
+        tempList = list(e)
+        letterArray.extend(tempList)
     
     # Test
-    print lineArray
+    print letterArray
     
     
+inputFile = raw_input("Enter file name: ")
+lettersInFile(inputFile)
