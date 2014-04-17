@@ -24,20 +24,18 @@ def lettersInFile( file_name ):
         letterArray.extend(tempList)
 
     # Loop through file for boddy guards
-    while count < len(letterArray)-7:
-        if letterArray[count].isupper():
+    while count < len(letterArray)-9:
+        if letterArray[count].islower():
             if letterArray[count+1].isupper():
                 if letterArray[count+2].isupper():
-                    if letterArray[count+3].isupper() != True:
-                        if letterArray[count+4].isupper():
+                    if letterArray[count+3].isupper():
+                        if letterArray[count+4].islower():
                             if letterArray[count+5].isupper():
                                 if letterArray[count+6].isupper():
-                                    print letterArray[count]
-                                    print letterArray[count+2]
-                                    print letterArray[count+3]
-                                    print letterArray[count+4]
-                                    print letterArray[count+5]
-                                    print letterArray[count+6]
+                                    if letterArray[count+7].isupper():
+                                        if letterArray[count+8].islower():
+                                            print letterArray[count+4]
+        count = count+1
     
     
 inputFile = raw_input("Enter file name: ")
