@@ -18,11 +18,18 @@ urlFile = raw_input("Enter the address: ")
 
 def deserializeURL(inputURL):
     fileHTML = urllib.urlopen(inputURL)
+    
 
     # load the file
     pickelFile = pickle.load(fileHTML)
+    print fileHTML.read()
 
     # print the result
-    print picklFile
-    
+    for e in pickelFile:
+        print "slot"
+        for i in e:
+            print i
 
+    fileHTML.close()
+    
+deserializeURL(urlFile)
