@@ -6,3 +6,7 @@ www.pythonchallenge.com/pc/def/ocr.html
 
 level 3:
 http://www.pythonchallenge.com/pc/def/equality.html
+
+level 4:
+http://www.pythonchallenge.com/pc/def/linkedlist.html
+
