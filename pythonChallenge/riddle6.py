@@ -22,14 +22,19 @@ def deserializeURL(inputURL):
 
     # load the file
     pickelFile = pickle.load(fileHTML)
-    print fileHTML.read()
+    count = 0
 
     # print the result
     for e in pickelFile:
-        print "slot"
-        for i in e:
-            print i
+        print "SLOT"
+        print e
+        count += 1
+        #for i in e:
+            #print i
 
     fileHTML.close()
+
+    #print how many alots in the 1st dimention there are for a test
+    print count
     
 deserializeURL(urlFile)
