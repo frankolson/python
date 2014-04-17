@@ -3,7 +3,7 @@
 ### V.1
 ### 14 April 2014
 ### Python 2.7.5
-### Last Update: 14 April 2014
+### Last Update: 17 April 2014
 
 ### Based on the clue the program will search through the input file looking for
 ### a lowercase letter surrounded on each side by three uppercase letters
