@@ -13,18 +13,31 @@ def lettersInFile( file_name ):
     fout = open(file_name, 'r')
     
     # Initialize variables and arrays
-    answer = ""
     letterArray = []
     tempList = []
     lineArray = fout.readlines()
+    count = 0
 
     # Populate letterArray
     for e in lineArray:
         tempList = list(e)
         letterArray.extend(tempList)
-    
-    # Test
-    print letterArray
+
+    # Loop through file for boddy guards
+    while count < len(letterArray)-7:
+        if letterArray[count].isupper():
+            if letterArray[count+1].isupper():
+                if letterArray[count+2].isupper():
+                    if letterArray[count+3].isupper() != True:
+                        if letterArray[count+4].isupper():
+                            if letterArray[count+5].isupper():
+                                if letterArray[count+6].isupper():
+                                    print letterArray[count]
+                                    print letterArray[count+2]
+                                    print letterArray[count+3]
+                                    print letterArray[count+4]
+                                    print letterArray[count+5]
+                                    print letterArray[count+6]
     
     
 inputFile = raw_input("Enter file name: ")
